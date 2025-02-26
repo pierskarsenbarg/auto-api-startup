@@ -1,0 +1,27 @@
+[project]
+name = "prog"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Piers Karsenbarg",email = "piers@pulumi.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pulumi = "~3.126.0"
+pulumi-azure-native = "~2.50.1"
+pulumi-azuread = "~5.53.3"
+pulumi-databricks = "~1.47.0"
+pulumi-azure = "~5.72.0"
+
+
+[tool.poetry.scripts]
+prog = 'prog.main:main'
